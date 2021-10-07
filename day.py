@@ -1,10 +1,19 @@
 from datetime import date
+import datetime as dt
+import datetime
 import time
-import datetime 
+
+# current time 
+dt_India = dt.datetime.utcnow() + dt.timedelta(hours=5, minutes=30)
+Indian_time = dt_India.strftime(' %-I:%M %p')
+print(Indian_time)
+
+
 today = date.today()
 
 # Textual month, day and year    
 d = today.strftime("%d,%B %Y")
+
 
 # current weekday
 a = datetime.datetime.today().weekday()
