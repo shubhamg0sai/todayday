@@ -1,17 +1,26 @@
-import datetime
+from datetime import date
+import time
+import datetime 
+today = date.today()
+
+# Textual month, day and year    
+d = today.strftime("%d,%B %Y")
+
+# current weekday
 a = datetime.datetime.today().weekday()
 if a == 0:
-    print("It's Monday.")
+    print("Monday",d)
 elif a == 1:
-    print("It's Tuesday.")
+    print("Tuesday",d)
 elif a == 2:
-    print("It's Wednesday.")
+    print(" Wednesday",d)
 elif a == 3:
-    print("It's Thursday.")
+    print(" Thursday",d)
 elif a ==4:
-    print("It's Friday.")
+    print(" Friday",d)
 elif a == 5:
-    print("It's Saturday.")
+    print(" Saturday",d)
 elif a == 6:
-    print("It's Sunday.")
+    print("Sunday",d)
     
+
